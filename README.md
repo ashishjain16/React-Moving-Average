@@ -1,68 +1,15 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+React Moving Average
+Description:
+A moving average (MA) is a widely used indicator in technical analysis that helps smooth out price action by filtering out the noise from random price fluctuations. It is a trend-following, or lagging, indicator because it is based on past prices. The moving average is calculated over a period of time or certain number of past ticks/prices and is compared with the current tick/price. We want to create a screen that easily helps us in making buy/sell decisions for a set of FX currencies.
 
+Additional Notes:
+You are given: a REST API which has the list of currency pairs. You are also given a Websocket that simulates stock data. After connecting, you can start receiving data by sending a json message of the form {"currencyPair":"EURUSD"}. Your task is to design a screen similar to the one shown in the screenshot. There are 4 boxes, each belonging to a currency pair that can be selected from its dropdown. You will need to match the stylings in the screenshot accurately. The background color for each box depends on the moving average and current value of the security. There is an input box to determine how many previous ticks to account for while creating the moving average. The color of each box is determined by the current and moving average values. If the current value is greater than moving average the background needs to be red, suggesting 'SELL' .Conversely, if the current is lesser, the background needs to be green, suggesting 'BUY'. The brightness of green/red depends on how far the current value is from the moving average, the brightest red showing when the current is more than 5% higher than the current, then next level of brightness at 4.5% further reducing brightness at each step of 0.5% until 0. Conversely, the brightness of green also follows the same pattern.
 ## Available Scripts
 
-In the project directory, you can run:
+To start the project, run:
 
 ### `npm start`
 
-Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
