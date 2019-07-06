@@ -1,0 +1,103 @@
+body{
+  color: white;
+}
+
+h1,h2,h3{
+  padding: 0px;
+  margin: 0px;
+  display: inline-block;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+
+select {
+  margin-bottom: 1em;
+  padding: .25em;
+  border: 0;
+  border-bottom: 2px solid currentcolor; 
+  font-weight: bold;
+  letter-spacing: .15em;
+  border-radius: 0;
+  background-color: inherit;
+  color: white;
+   &:focus, &:active {
+    outline: 0;
+  }
+}
+
+select option { color: black; }
+
+select :focus{
+   outline: 0;
+}
+
+.movingavg{
+  width: 400px;
+  height: 200px;
+  padding: 15px;
+  position: relative;
+}
+.div-select{
+  display: inline-block;
+}
+
+.divperc{
+  float: right;
+}
+.price-f {
+  display: inline-block;
+}
+.noofticks {
+  float: right;
+}
+.noOfticksText{
+  font-size: xx-small;
+ 
+}
+.ticks{
+  text-decoration: underline;
+  font-size: large;
+}
+.axis path,
+    .axis line {
+      fill: none;
+      stroke: white;
+      shape-rendering: crispEdges;
+    }
+
+    .x.axis path {
+      display: none;
+    }
+
+    .line {
+      fill: none;
+      stroke: white;
+      stroke-width: 1.5px;
+    }
+
+    .chart{
+      padding-bottom: 0px !important;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+
+   
